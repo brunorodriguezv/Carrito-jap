@@ -8,6 +8,46 @@
 
 </head>
 <body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <h1>Carrito de Compras - ElectroTech</h1>
+                <form id="cartForm">
+                    <div class="form-group">
+                        <label for="cliente">Nombre del Cliente</label>
+                        <input type="text" class="form-control" id="cliente" placeholder="Nombre del Cliente">
+                    </div>
+                    <div class="form-group">
+                        <label for="rut">RUT (opcional)</label>
+                        <input type="text" class="form-control" id="rut" placeholder="RUT">
+                    </div>
+                    <div class="form-group">
+                        <label for="producto">Producto</label>
+                        <select class="form-control" id="producto">
+                            <option value="producto1">Producto 1</option>
+                            <option value="producto2">Producto 2</option>
+                            <option value="producto3">Producto 3</option>
+                        </select>
+                    </div>
+                    <button type="button" class="btn btn-primary" onclick="agregarProducto()">Agregar al Carrito</button>
+                </form>
+                <hr>
+                <h3>Carrito de Compras</h3>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Precio</th>
+                        </tr>
+                    </thead>
+                    <tbody id="carritoBody">
+                        <!-- Aquí se mostrarán los productos agregados al carrito -->
+                    </tbody>
+                </table>
+                <h4>Total: <span id="total">$0.00</span></h4>
+            </div>
+        </div>
+    </div>
     
 </body>
 </html>
